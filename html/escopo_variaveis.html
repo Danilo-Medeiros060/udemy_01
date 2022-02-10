@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> operadores </title>
+        
+
+        <script>
+
+            //escopos: global, função, bloco
+
+            var serie = 'GOT';
+
+            if (true){
+                var serie2 = 'pokemon';
+                document.write(serie);
+            }
+
+            document.write(serie2);
+            document.write('<br/>');
+
+            function x(){
+
+                var serie3 = 'TWD';
+                document.write(serie);
+                document.write(serie2);
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <script src="js/script.js"> </script>
+    </body>
+</html>
