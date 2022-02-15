@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Calculadora Prompt </title>
+        
+
+
+    </head>
+
+    <body>
+
+        <center>
+
+            <p id="user"> Olá, úsuario! </p>
+            <p id="result"> O resultado é: $ </p>
+
+            <button type="button" onclick="calculadoraAcao()"> Calcule! </button>
+
+        </center>
+        <script>
+
+            var user = prompt("Insira seu nome:")
+            document.getElementById("user").innerHTML =  "Olá, " + user + "!";
+
+            function calculadoraAcao(){
+                var num1 = parseFloat(prompt("Insira o primeiro valor:"));
+                var num2 = parseFloat(prompt("Insira o segundo valor:"));
+
+                resultado = num1 + num2;
+
+                document.getElementById("result").innerHTML =  "O resultado é: " + resultado + ".";
+           
+            }
+        </script>
+        <script src="js/script.js"> </script>
+    </body>
+</html>
